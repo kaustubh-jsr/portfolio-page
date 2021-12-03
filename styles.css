@@ -168,7 +168,7 @@ img{
         grid-column: 3/-3;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:150px 1fr;
+        grid-template-rows:300px 1fr;
     }
     .content-section:nth-child(even){
         grid-template-columns: 1fr;
