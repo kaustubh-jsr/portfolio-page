@@ -149,6 +149,10 @@ img{
 }
 
 @media screen and (max-width:1245px) {
+    .header-img>img{
+        width: 50%;
+        height: auto;
+    }
     .content{
         padding-top: 2%;
         grid-area: content;
@@ -164,21 +168,28 @@ img{
         grid-column: 3/-3;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:200px 1fr;
-        column-gap: 4rem;
+        grid-template-rows:150px 1fr;
     }
     .content-section:nth-child(even){
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 1fr;
     }
     
-    
+    .content-img{
+        grid-row: 1/2;
+    }
+    .content-text{
+        grid-row: 2/3;
+    }
     .content-img>img{
+        /* display:none; */
+        width: 60%;
         height: 100%;
+        
     }
     
     .content-subtext{
         font-weight: 300;
-        font-size: 15px;
+        font-size: 20px;
         line-height: 1.5rem;
     }
 }
