@@ -122,14 +122,19 @@ nav{
 .content-text{
     /* border: 1px solid black; */
     text-align: center;
-    display: grid;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     box-shadow: rgb(19 15 235 / 10%) 0px 0px 15px 5px;
 }
 .content-subtext{
     font-weight: 300;
-    font-size: 22px;
+    width: 70%;
+    font-size: 1.2rem;
     line-height: 32px;
 } 
 .project-section{
@@ -137,10 +142,9 @@ nav{
     /* background-color: antiquewhite; */
     grid-column: 1/-1;
     grid-row:2/-2;
-    display: grid;
-    grid-auto-rows: 1fr;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 1.2rem;
 }
 
 a.btn-dark{
