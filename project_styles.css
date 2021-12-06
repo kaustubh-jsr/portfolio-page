@@ -7,7 +7,15 @@ body{
 }
 /* nav color : rgb(245, 23, 103);*/
 
+
 .container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* .container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 100px repeat(2,minmax(min-content,1fr)) 100px;
@@ -19,9 +27,8 @@ body{
     "content content content content"
     "content content content content"
     "content content content content"
-    /* "content-odd content-odd content-odd content-odd" */
     "footer footer footer footer";
-}
+} */
 a{
     text-decoration: none;
     /* color: */
@@ -206,4 +213,10 @@ a.btn-light:hover{
 .footer>ul>li>a{
     color: white;
     
+}
+
+@media screen and (max-width:1245px) {
+    .nav-item{
+        font-size: 1.2rem;
+    }
 }
