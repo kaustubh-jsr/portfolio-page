@@ -193,6 +193,9 @@ img{
     .content-section{
         flex-wrap: wrap;
     }
+    .content-section:nth-child(even){
+        flex-wrap: wrap-reverse;
+    }
     /* .content{
         padding-top: 2%;
         grid-area: content;
